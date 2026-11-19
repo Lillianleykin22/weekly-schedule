@@ -30,6 +30,10 @@ td {
     height: 100%;
     text-align: center;
 }
+td:hover{
+    background-color: paleturquoise;
+    cursor: pointer;
+}
     td:first-child {
         direction: ltr;
     }
