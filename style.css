@@ -34,6 +34,10 @@ td:hover{
     background-color: paleturquoise;
     cursor: pointer;
 }
+td:focus{
+    background-color: cornflowerblue;
+    outline-color: lightblue;
+}
     td:first-child {
         direction: ltr;
     }
