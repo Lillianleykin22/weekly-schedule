@@ -9,11 +9,10 @@ cells.forEach(function(cell) {
             cell.style.backgroundColor = "";
             cell.style.textDecoration = "";
 
-            if (text.includes("בוטל") || text.includes("נדחה")){
+            if (text.includes("בוטל") || text.includes("נדחה")) {
                 cell.style.backgroundColor = "red";
                 cell.style.textDecoration = "line-through";
-            }
-            else if (text.includes("לימודים")) {
+            } else if (text.includes("לימודים")) {
                 cell.style.backgroundColor = "lightblue";
             } else if (text.includes("עבודה")) {
                 cell.style.backgroundColor = "lightgreen";
@@ -22,4 +21,13 @@ cells.forEach(function(cell) {
             }
         });
     }
+});
+document.getElementById("clearBtn").addEventListener("click", function () {
+        cells.forEach(function(cell) {
+            if (cell.cellIndex !== 0) {
+                cell.textContent = "";
+                cell.style.backgroundColor = "";
+                cell.style.textDecoration = "";
+            }
+        });
 });
